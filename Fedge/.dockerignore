@@ -1,0 +1,8 @@
+.env
+.git
+.gitignore
+env/
+modifyingmodels.txt
+pip_freeze
+README.md
+test.txt
