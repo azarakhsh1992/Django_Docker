@@ -11,12 +11,12 @@ import os
 
 
 def send_mqtt_latch(latch,value,delay,delayed_value):
-    try:
-        broker=os.environ["BROKER_IP"]
-    except:
-        broker="localhost"
+    # try:
+    #     broker=os.environ["BROKER_IP"]
+    # except:
+    #     broker="127.0.0.1"
     
-    # broker="192.168.1.1"
+    broker="192.168.1.1"
     profinet_name=''
     topic =''
     message=''
@@ -53,12 +53,12 @@ def send_mqtt_latch(latch,value,delay,delayed_value):
 
 def send_mqtt_led(led,value,delay,delayed_value):
     
-    try:
-        broker = os.environ["BROKER_IP"]
-    except:
-        broker="localhost"
+    # try:
+    #     broker = os.environ["BROKER_IP"]
+    # except:
+    #     broker="127.0.0.1"
         
-    # broker='192.168.1.1'
+    broker='192.168.1.1'
     profinet_name=''
     topic =''
     message=''
