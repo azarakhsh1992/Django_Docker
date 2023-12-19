@@ -6,3 +6,4 @@ Fedge/web/migrations/
 fedge/venv/
 web/migrations/
 venv/
+.idea/
