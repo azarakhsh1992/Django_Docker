@@ -10,7 +10,7 @@ docker network connect my-custom-network existing-container
 
 http://existing-container:port
 
-port = the port number of your container
+#port = the port number of your container
 
 #Check if network is connected to container
 
@@ -27,3 +27,5 @@ docker exec -it existing-container-1 ping existing-container-2
 #Check the container in a network
 
 docker ps --filter network=my-custom-network
+
+http://web:8000

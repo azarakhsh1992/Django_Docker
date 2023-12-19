@@ -2,7 +2,7 @@ import React from 'react';
 import {status} from '../utils';
 
 export function GetDoor(qr){
-    return fetch('http://192.168.1.1:8000/web/doors/getdoor/',{
+    return fetch('http://web:8000/web/doors/getdoor/',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
