@@ -1,0 +1,29 @@
+#Create a custom network
+
+docker network create my-custom-network
+
+#Connect a network to a container
+
+docker network connect my-custom-network existing-container
+
+#Address of your container in network is :
+
+http://existing-container:port
+
+port = the port number of your container
+
+#Check if network is connected to container
+
+docker container inspect existing-container
+
+#Check what containers are connected to a network
+
+docker network inspect my-custom-network
+
+#Check ping from a container to another
+
+docker exec -it existing-container-1 ping existing-container-2
+
+#Check the container in a network
+
+docker ps --filter network=my-custom-network
